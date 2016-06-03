@@ -1,0 +1,8 @@
+[package]
+name = "jengine"
+version = "0.1.0"
+authors = ["Brandon King <wektorious@gmail.com>"]
+
+[dependencies]
+jservice = { path = "../jservice-rs" }
+rand = "0.3"
