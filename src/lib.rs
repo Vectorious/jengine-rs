@@ -17,8 +17,8 @@ pub struct Jeopardy {
 impl Jeopardy {
     pub fn generate() -> Result<Jeopardy, String> {
         let mut used_ids = Vec::new();
-        let jeopardy_board = generate_board(2, 1, &mut used_ids).unwrap();
-        let double_jeopardy_board = generate_board(2, 2, &mut used_ids).unwrap();
+        let jeopardy_board = generate_board(6, 1, &mut used_ids).unwrap();
+        let double_jeopardy_board = generate_board(6, 2, &mut used_ids).unwrap();
         let final_jeopardy_clue = {
             let mut final_clue: Clue = jservice::get_random(Some(1)).unwrap()[0].clone();
             if jeopardy_board.borrow_flat_clues().iter()
