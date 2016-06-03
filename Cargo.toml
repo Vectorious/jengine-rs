@@ -4,5 +4,5 @@ version = "0.1.0"
 authors = ["Brandon King <wektorious@gmail.com>"]
 
 [dependencies]
-jservice = { path = "../jservice-rs" }
+jservice = "0.1"
 rand = "0.3"
